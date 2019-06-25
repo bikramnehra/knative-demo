@@ -1,0 +1,4 @@
+[submodule "cf-acceptance-tests"]
+	path = cf-acceptance-tests
+	url = git@github.com:cloudfoundry/cf-acceptance-tests.git
+	branch = master
