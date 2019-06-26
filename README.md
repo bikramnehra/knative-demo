@@ -37,6 +37,12 @@ Deploy a service using the generated container image in the build step:
 kubectl apply -f serve/service.yaml
 ```
 
+Check the created revision by running:
+
+```
+kubectl get revisions
+```
+
 Find the IP/NodePort of the service by running:
 
 ```
