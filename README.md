@@ -90,7 +90,7 @@ For load testing:
 ```
 hey -z 30s -c 50 \
   -host "knative-demo-app.default.example.com" \
-  "{IP_ADDRESS}"
+  "http://${IP_ADDRESS}"
 ```
 
 ## Grafana

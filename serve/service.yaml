@@ -19,3 +19,10 @@ spec:
     spec:
       containers:
         - image: docker.io/bikramnehra/knative-demo-app
+  traffic:
+    - latestRevision: true
+      percent: 100
+    #- revisionName: knative-demo-app-5vcnr
+    #  percent: 50
+    #- revisionName: knative-demo-app-vlprt
+    #  percent: 50
