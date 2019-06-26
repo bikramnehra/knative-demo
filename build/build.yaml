@@ -1,0 +1,17 @@
+apiVersion: build.knative.dev/v1alpha1
+kind: Build
+metadata:
+  name: knative-demo-app
+spec:
+  serviceAccountName: build-bot
+  source:
+    git:
+      url: https://github.com/bikramnehra/dora.git
+      revision: master
+  template:
+      name: buildpacks-cloudfoundry
+      arguments:
+      - name: IMAGE
+        value: docker.io/bikramnehra/knative-demo-app
+      - name: BUILDPACK_ORDER
+        value: https://github.com/cloudfoundry/ruby-buildpack#v1.7.31
