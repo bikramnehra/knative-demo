@@ -39,7 +39,11 @@ Deploy a service using the generated container image in the build step:
 kubectl apply -f serve/service.yaml
 ```
 
-Check the created revision by running:
+Check the created service/revision by running:
+
+```
+kubectl get kservice
+```
 
 ```
 kubectl get revisions
