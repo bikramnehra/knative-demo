@@ -2,6 +2,8 @@
 
 This repository contains resources for knative demo prepared for SUSE HackWeek18.
 
+![alt text](https://knative.dev/docs/images/knative-audience.svg)
+
 
 ## Install
 
@@ -101,3 +103,5 @@ kubectl port-forward --namespace knative-monitoring $(kubectl get pods --namespa
 - https://github.com/knative/docs/tree/master/docs/serving/samples/autoscale-go
 - https://www.youtube.com/watch?v=OPSIPr-Cybs
 - https://github.com/rakyll/hey
+- https://medium.com/google-cloud/hands-on-knative-part-1-f2d5ce89944e
+- https://medium.com/google-cloud/knative-buildpacks-source-code-to-container-image-without-dockerfile-34cb2dbfc49c
