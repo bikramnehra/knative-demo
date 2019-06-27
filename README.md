@@ -93,6 +93,8 @@ hey -z 30s -c 50 \
   "http://${IP_ADDRESS}"
 ```
 
+## Events
+
 ## Grafana
 
 Use following command to port foward and access Grafana Dashboards:
