@@ -1,4 +1,4 @@
-# knative-demo
+# knative-demo2
 
 This repository contains resources for knative demo prepared for SUSE HackWeek18.
 
