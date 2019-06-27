@@ -103,6 +103,7 @@ kubectl port-forward --namespace knative-monitoring $(kubectl get pods --namespa
 
 ## Links:
 
+- https://docs.google.com/presentation/d/1CsqDnJDbZaQjV4HALm4TS6IzOJbUM2czl0uc5JFPD5E/edit?usp=sharing
 - https://github.com/knative
 - https://github.com/knative/docs/tree/master/docs/serving/samples/autoscale-go
 - https://www.youtube.com/watch?v=OPSIPr-Cybs
