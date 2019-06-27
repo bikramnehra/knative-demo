@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1beta1
+kind: Service
+metadata:
+  name: github-event-display
+spec:
+  template:
+    metadata:
+        annotations:
+          # Knative concurrency-based autoscaling (default).
+          autoscaling.knative.dev/class: kpa.autoscaling.knative.dev
+          autoscaling.knative.dev/minScale: "1"
+    spec:
+      containers:
+      - image: gcr.io/knative-releases/github.com/knative/eventing-sources/cmd/event_display
