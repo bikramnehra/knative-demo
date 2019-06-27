@@ -101,6 +101,12 @@ Use following command to port foward and access Grafana Dashboards:
 kubectl port-forward --namespace knative-monitoring $(kubectl get pods --namespace knative-monitoring --selector=app=grafana  --output=jsonpath="{.items..metadata.name}") 3000
 ```
 
+## Eventing
+
+Follow instructions here: https://knative.dev/docs/eventing/samples/github-source/
+
+Currently blocked on: https://github.com/knative/eventing-contrib/issues/475
+
 ## Links:
 
 - https://docs.google.com/presentation/d/1CsqDnJDbZaQjV4HALm4TS6IzOJbUM2czl0uc5JFPD5E/edit?usp=sharing
