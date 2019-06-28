@@ -11,6 +11,12 @@ Install knative on minikube by following instructions [here](https://knative.dev
 
 ## Build
 
+Create a `BuildTemplate` for Cloudfoundry buildpacks:
+
+```
+kubectl apply -f build/cf.yaml
+```
+
 Create a `Secret` to store docker credentials:
 
 ```
