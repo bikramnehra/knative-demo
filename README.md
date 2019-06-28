@@ -11,6 +11,12 @@ Install knative on minikube by following instructions [here](https://knative.dev
 
 ## Build
 
+Create a `BuildTemplate` for Cloudfoundry buildpacks:
+
+```
+kubectl apply -f build/cf.yaml
+```
+
 Create a `Secret` to store docker credentials:
 
 ```
@@ -100,6 +106,12 @@ Use following command to port foward and access Grafana Dashboards:
 ```
 kubectl port-forward --namespace knative-monitoring $(kubectl get pods --namespace knative-monitoring --selector=app=grafana  --output=jsonpath="{.items..metadata.name}") 3000
 ```
+
+## Eventing
+
+Follow instructions here: https://knative.dev/docs/eventing/samples/github-source/
+
+Currently blocked on: https://github.com/knative/eventing-contrib/issues/475
 
 ## Links:
 
